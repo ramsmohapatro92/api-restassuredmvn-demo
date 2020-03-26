@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4535" started-at="2020-03-26T04:12:23 IST" finished-at="2020-03-26T04:12:27 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4535" started-at="2020-03-26T04:12:23 IST" finished-at="2020-03-26T04:12:27 IST">
+      <class name="com.restassured.qa.test.GetCallBDD">
+        <test-method status="PASS" signature="validateRequestResponse()[pri:0, instance:com.restassured.qa.test.GetCallBDD@1b68ddbd]" name="validateRequestResponse" duration-ms="4473" started-at="2020-03-26T04:12:23 IST" finished-at="2020-03-26T04:12:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRequestResponse -->
+      </class> <!-- com.restassured.qa.test.GetCallBDD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
