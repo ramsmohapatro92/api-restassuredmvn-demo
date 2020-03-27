@@ -14,9 +14,61 @@ public class PayLoad {
 				+ "  \"language\": \"Odia Hindi  Tamil English-IN\"\r\n" + "}";
 	}
 
-//	public static String UpdatePlace() {
-//		return "{\r\n" + "			\"place_id\":\""+getcallobj+""",\r\n"
-//				+ "			\"address\":\"301 Sumangali square\",\r\n" + "			\"key\":\"qaclick123\"\r\n"
-//				+ "			} ";
-
+	public static String CoursePrice()
+	{
+		return("{\r\n" + 
+				"\r\n" + 
+				"\"dashboard\": {\r\n" + 
+				"\r\n" + 
+				"\"purchaseAmount\": 16860,\r\n" + 
+				"\r\n" + 
+				"\"website\": \"rahulshettyacademy.com\"\r\n" + 
+				"\r\n" + 
+				"},\r\n" + 
+				"\r\n" + 
+				"\"courses\": [\r\n" + 
+				"\r\n" + 
+				"{\r\n" + 
+				"\r\n" + 
+				"\"title\": \"Selenium Python\",\r\n" + 
+				"\r\n" + 
+				"\"price\": 50,\r\n" + 
+				"\r\n" + 
+				"\"copies\": 6\r\n" + 
+				"\r\n" + 
+				"},\r\n" + 
+				"\r\n" + 
+				"{\r\n" + 
+				"\r\n" + 
+				"\"title\": \"Cypress\",\r\n" + 
+				"\r\n" + 
+				"\"price\": 40,\r\n" + 
+				"\r\n" + 
+				"\"copies\": 4\r\n" + 
+				"\r\n" + 
+				"},\r\n" + 
+				"\r\n" + 
+				"{\r\n" + 
+				"\r\n" + 
+				"\"title\": \"RPA\",\r\n" + 
+				"\r\n" + 
+				"\"price\": 45,\r\n" + 
+				"\r\n" + 
+				"\"copies\": 10\r\n" + 
+				"\r\n" + 
+				"},\r\n" + 
+				"{\r\n" + 
+				"\r\n" + 
+				"\"title\": \"Appium\",\r\n" + 
+				"\r\n" + 
+				"\"price\": 145,\r\n" + 
+				"\r\n" + 
+				"\"copies\": 110\r\n" + 
+				"\r\n" + 
+				"}\r\n" + 
+				"\r\n" + 
+				"]\r\n" + 
+				"\r\n" + 
+				"}");
+	}
 }

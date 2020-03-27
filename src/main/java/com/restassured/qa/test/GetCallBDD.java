@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.*;
 
 import com.restassured.utility.PayLoad;
+import com.restassured.utility.ReusableMethods;
 
 public class GetCallBDD {
 
@@ -36,7 +37,7 @@ public class GetCallBDD {
 		
 		//now to get the place_id from the response JSON, We need to use JSONPATH class object, it will take string as input
 		//How to retrive the place id: 
-		JsonPath jsdetails=new JsonPath(post_response);
+		JsonPath jsdetails=ReusableMethods.jsonPathinitiator(post_response);
 		String place_id=jsdetails.get("place_id");
 		System.out.println("Place id is: "+place_id);
 		
