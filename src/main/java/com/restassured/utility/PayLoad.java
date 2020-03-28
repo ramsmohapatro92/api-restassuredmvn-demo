@@ -71,4 +71,29 @@ public class PayLoad {
 				"\r\n" + 
 				"}");
 	}
+	
+	public static String AddBook(String bookname,String isbn, String aisle)
+	{
+		String AddBookRequest="{\r\n" + 
+				"\r\n" + 
+				"\"name\":\""+bookname+"\",\r\n" + 
+				"\"isbn\":\""+isbn+"\",\r\n" + 
+				"\"aisle\":\""+aisle+"\",\r\n" + 
+				"\"author\":\"Test Author Ram\"\r\n" + 
+				"}";
+		
+		return AddBookRequest;
+	}
+	public static String deletebook(String isbn)
+	{
+		
+		String DeleteBookRequest="{\r\n" + 
+				"{\r\n" + 
+				" \r\n" + 
+				"\"ID\" : \""+isbn+"\"\r\n" + 
+				" \r\n" + 
+				"} \r\n" + 
+				"";
+		return DeleteBookRequest;
+	}
 }
