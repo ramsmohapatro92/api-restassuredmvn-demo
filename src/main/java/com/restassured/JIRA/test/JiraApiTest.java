@@ -94,4 +94,18 @@ public class JiraApiTest {
 		System.out.println(fileAttached);
 
 	}
+	
+	//Get Issue details using Query Parameter
+	@Test(dependsOnMethods = "createIssue", priority = 5)
+	public static void getIssue()
+	{
+		RestAssured.baseURI = "http://localhost:8090";
+		
+		String getIssueResponse= given().filter(session_id).pathParam("key", defect_id).queryParam("fields", "comment").log().all().when().get("GET /rest/api/2/issue/{key}")
+								.then().log().all().extract().asString();
+		
+		System.out.println(getIssueResponse);
+	
+	}
+	
 }
