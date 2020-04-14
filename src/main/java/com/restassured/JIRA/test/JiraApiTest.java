@@ -94,8 +94,8 @@ public class JiraApiTest {
 		System.out.println(fileAttached);
 
 	}
-	
-	//Get Issue details using Query Parameter
+
+	// Get Issue details using Query Parameter
 	@Test(dependsOnMethods = "createIssue", priority = 5)
 	public static void getIssue()
 	{
@@ -107,5 +107,41 @@ public class JiraApiTest {
 		System.out.println(getIssueResponse);
 	
 	}
-	
+
+	// To Validate Comments in a response:Mentor code
+
+	public static void getIssue_mentor()
+	{
+//	String issueDetails=given().filter(session_id).pathParam("key", "10101")
+//
+//			.queryParam("fields", "comment")
+//
+//			.log().all().when().get("/rest/api/2/issue/{key}").then()
+//
+//			.log().all().extract().response().asString();
+//
+//			System.out.println(issueDetails);
+//
+//			JsonPath js1 =new JsonPath(issueDetails);
+//
+//			int commentsCount=js1.getInt("fields.comment.comments.size()");
+//
+//			for(int i=0;i<commentsCount;i++)
+//
+//			{
+//
+//			String commentIdIssue =js1.get("fields.comment.comments["+i+"].id").toString();
+//
+//			if (commentIdIssue.equalsIgnoreCase(commentId))
+//
+//			{
+//
+//			String message= js1.get("fields.comment.comments["+i+"].body").toString();
+//
+//			System.out.println(message);
+//
+//			Assert.assertEquals(message, expectedMessage);
+//
+//			
+			}
 }
